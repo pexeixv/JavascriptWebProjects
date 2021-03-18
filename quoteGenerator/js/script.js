@@ -22,7 +22,7 @@ var i = 0;
 // Get quote from API
 var getQuoteFromAPI = async () => {
     var URL = 'http://api.forismatic.com/api/1.0/?method=getQuote&lang=en&format=json';
-    var URL = 'http://api.quotable.io/random';
+    var URL = 'https://api.quotable.io/random';
     try {
         showLoadingAnimation(true);
         var res = await fetch(URL);
