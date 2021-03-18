@@ -18,27 +18,37 @@ var showLoadingAnimation = flag => {
 }
 
 
+var i = 0;
 // Get quote from API
 var getQuoteFromAPI = async () => {
     var URL = 'http://api.forismatic.com/api/1.0/?method=getQuote&lang=en&format=json';
+    var URL = 'http://api.quotable.io/random';
     try {
         showLoadingAnimation(true);
         var res = await fetch(URL);
         var data = await res.json();
-        quote.innerText = data.quoteText;
-        if (data.quoteText.length > 100)
+        console.log(data);
+        quote.innerText = data.content;
+        if (data.content.length > 100)
             quote.classList.add('quote_text-long');
         else
             quote.classList.remove('quote_text-long');
-        if (data.quoteAuthor)
-            author.innerText = data.quoteAuthor;
+        if (data.author)
+            author.innerText = data.author;
         else
             author.innerText = 'Anonymous';
         showLoadingAnimation(false);
 
     } catch (error) {
-        getQuoteFromAPI();
-        console.error(`We're sorry, quote not found - ${error}`);
+        i++;
+        if (i > 10) {
+            quote.innerText = `We're sorry. API cannot be reached`;
+            showLoadingAnimation(false)
+            console.error(`We're sorry, quote not found - ${error}`);
+        }
+        else {
+            getQuoteFromAPI();
+        }
     }
 }
 getQuoteFromAPI();

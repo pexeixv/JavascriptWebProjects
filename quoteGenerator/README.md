@@ -9,7 +9,7 @@
 * 'Tweet' button to directly tweet quotes.
 
 ## Resources used
-* Quotes pulled from [Forismatic API](https://forismatic.com/en/api/).
+* Quotes pulled from [quotable.io](https://github.com/lukePeavey/quotable).
 * Icons from [Font Awesome](https://fontawesome.com/).
 * ['Poppins'](https://fonts.google.com/specimen/Poppins) typeface from [Google Fonts](https://fonts.google.com/).
 * Background pattern from [Hero Patterns](https://www.heropatterns.com/).
