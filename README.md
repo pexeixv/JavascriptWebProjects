@@ -5,3 +5,8 @@
 ## Random Quote Generator
 + [Code](https://github.com/pexeixv/JavascriptWebProjects/tree/main/quoteGenerator)
 + [Live](https://pexeixv.github.io/JavascriptWebProjects/quoteGenerator/)
+
+## Infinite Scroll Image Gallery
++ [Code](https://github.com/pexeixv/JavascriptWebProjects/tree/main/infiniteScroll)
++ [Live](https://pexeixv.github.io/JavascriptWebProjects/infiniteScroll/)
+
