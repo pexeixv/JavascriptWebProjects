@@ -1,9 +1,14 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css");
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 *, *::before, *::after {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -58,5 +63,18 @@ h1 {
 
 .image-container img {
   width: 100%;
+}
+
+.arrow {
+  -webkit-transition: all 300ms ease-out;
+  transition: all 300ms ease-out;
+  -webkit-transform: translate(-50%, 100%);
+          transform: translate(-50%, 100%);
+  position: fixed;
+  left: 50%;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 0.5em;
+  color: whitesmoke;
 }
 /*# sourceMappingURL=style.css.map */

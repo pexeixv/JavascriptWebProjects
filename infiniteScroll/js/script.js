@@ -37,3 +37,10 @@ window.addEventListener('scroll', () => {
         displayPhotosWihtoutApi()
     }
 })
+
+window.addEventListener('scroll', () => {
+    arrow = document.querySelector('#arrow')
+    if (window.scrollY > window.innerHeight * 1.0)
+        arrow.style.transform = 'translate(-50%,000%)'
+    else arrow.style.transform = 'translate(-50%,100%)';
+})
