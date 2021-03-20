@@ -25,7 +25,7 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  min-height: 100vh;
+  min-height: calc(100vh-80px);
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -113,7 +113,7 @@ a {
 
 @media screen and (max-width: 660px) {
   .main {
-    max-height: 100vh;
+    height: calc( 100vh - 80px);
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -130,9 +130,9 @@ a {
         -ms-flex-pack: end;
             justify-content: flex-end;
     padding: 1.5em;
-    -webkit-box-flex: 3;
-        -ms-flex: 3;
-            flex: 3;
+    -webkit-box-flex: 2;
+        -ms-flex: 2;
+            flex: 2;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -140,9 +140,9 @@ a {
   }
   .main_right {
     background: url("js.svg") no-repeat center bottom/cover;
-    -webkit-box-flex: 2;
-        -ms-flex: 2;
-            flex: 2;
+    -webkit-box-flex: 10;
+        -ms-flex: 10;
+            flex: 10;
     min-height: 300px;
     text-align: center;
   }
@@ -261,38 +261,50 @@ a {
   }
 }
 
-.gavin {
-  position: absolute;
+header {
+  background: #f4d03e;
+  height: 80px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  top: 20px;
-  left: 80px;
-  font-weight: 700;
-  font-size: 1.2rem;
-  height: 40px;
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
+  padding: 0 5em;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 10px;
 }
 
-.gavin img {
-  height: 100%;
+header .gavin {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0.5em;
+  font-weight: 700;
+  font-size: 1.2rem;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 
-.gavin:hover {
+header .gavin:hover {
   text-decoration: underline;
 }
 
+header img {
+  height: 70%;
+  max-height: 40px;
+}
+
 @media screen and (max-width: 660px) {
-  .gavin {
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-            transform: translateX(-50%);
+  header {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 /*# sourceMappingURL=style.css.map */

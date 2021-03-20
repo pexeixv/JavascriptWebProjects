@@ -20,7 +20,7 @@ a
 .main
     background: #f4d03e
     display: flex
-    min-height: 100vh
+    min-height: calc(100vh-80px)
     align-items: center
     justify-content: center
     & > *
@@ -69,7 +69,7 @@ a
 
 @media screen and (max-width: 660px)
     .main
-        max-height: 100vh
+        height: calc( 100vh - 80px )
         &_title
             font-size: 1.2rem
         flex-direction: column
@@ -79,12 +79,12 @@ a
         &_left
             justify-content: flex-end
             padding: 1.5em
-            flex: 3
+            flex: 2
             align-items: center
             text-align: center
         &_right
             background: url('js.svg') no-repeat center bottom/cover
-            flex: 2
+            flex: 10
             min-height: 300px
             // height: 50%
             text-align: center
@@ -152,21 +152,26 @@ a
             opacity: 0
 
 
-.gavin
-    position: absolute
+header
+    background: #f4d03e
+    height: 80px
     display: flex
-    top: 20px
-    left: 80px
-    font-weight: 700
-    font-size: 1.2rem
-    height: 40px
-    width: max-content
+    padding: 0 5em
     align-items: center
-    gap: 10px
+    .gavin
+        display: flex
+        align-items: center
+        gap: 0.5em
+        font-weight: 700
+        font-size: 1.2rem
+        width: fit-content
+        height: fit-content
+        &:hover
+            text-decoration: underline
     img
-        height: 100%
-    &:hover
-        text-decoration: underline
-    @media screen and ( max-width: 660px )
-        left: 50%
-        transform: translateX(-50%)
+        height: 70%
+        max-height: 40px
+@media screen and ( max-width: 660px )
+    header
+        justify-content: center
+        
