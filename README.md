@@ -20,3 +20,10 @@ ___
 + [Live](https://pexeixv.github.io/JavascriptWebProjects/infiniteScroll/)
 
 
+___
+
+## Picture in Picture Video Streamer
++ [Code](https://github.com/pexeixv/JavascriptWebProjects/tree/main/pictureInPicture)
++ [Live](https://pexeixv.github.io/JavascriptWebProjects/pictureInPicture/)
+
+

@@ -9,6 +9,11 @@ var projects = [
         "title": "Infinite Scroll Gallery",
         "link": "infiniteScroll"
     },
+    {
+        "id": 3,
+        "title": "PIP Video Streamer",
+        "link": "pictureInPicture"
+    },
 
 ];
 
